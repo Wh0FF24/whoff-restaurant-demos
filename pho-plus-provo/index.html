@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pho Plus — Vietnamese pho, banh mi, and rice plates — fresh in downtown Provo.</title>
+  <meta name="description" content="Pho Plus in Provo, UT. Vietnamese pho, banh mi, and rice plates — fresh in downtown Provo.. View menu, hours, and contact." />
+
+  <!-- OG / Social -->
+  <meta property="og:title" content="Pho Plus" />
+  <meta property="og:description" content="Vietnamese pho, banh mi, and rice plates — fresh in downtown Provo." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1600&q=80" />
+  <meta property="og:type" content="restaurant" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #c1272d;
+      --brand-dark: #8e1c20;
+      --bg: #faf8f4;
+      --ink: #1f1d1a;
+      --muted: #6b6660;
+      --line: #e6e1d8;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .brand-bg  { background: var(--brand); }
+    .brand-bg:hover { background: var(--brand-dark); }
+    .brand-text { color: var(--brand); }
+    .hero-img {
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────── -->
+  <nav class="sticky top-0 z-30 bg-[var(--bg)]/95 backdrop-blur border-b border-[var(--line)]">
+    <div class="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="text-xl font-semibold tracking-tight">Pho Plus</a>
+      <div class="hidden sm:flex gap-7 text-sm font-medium">
+        <a href="#menu" class="hover:brand-text">Menu</a>
+        <a href="#visit" class="hover:brand-text">Visit</a>
+        <a href="#contact" class="hover:brand-text">Contact</a>
+      </div>
+      <a href="tel:+18013778808" class="brand-bg text-white px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+        Call
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────────── -->
+  <header id="top" class="hero-img text-white">
+    <div class="max-w-5xl mx-auto px-5 py-28 sm:py-36">
+      <p class="uppercase tracking-[0.2em] text-xs sm:text-sm opacity-80">Provo, UT</p>
+      <h1 class="mt-3 text-5xl sm:text-7xl font-bold leading-tight">Pho Plus</h1>
+      <p class="mt-4 text-xl sm:text-2xl opacity-90 max-w-2xl">Vietnamese pho, banh mi, and rice plates — fresh in downtown Provo.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#menu" class="brand-bg px-6 py-3 rounded-full font-semibold shadow-md">View menu</a>
+        <a href="tel:+18013778808" class="bg-white text-[var(--ink)] px-6 py-3 rounded-full font-semibold shadow-md">Call us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── ABOUT ───────────────────────────────────────────────── -->
+  <section class="max-w-3xl mx-auto px-5 py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl font-semibold">About</h2>
+    <p class="mt-6 text-lg leading-relaxed text-[var(--muted)]">Family-run Vietnamese kitchen on Center Street since the early 2000s. Pho simmered overnight, herbs picked fresh, broth made from scratch. Stop in for lunch, dine in for dinner, or call ahead and we'll have it ready.</p>
+  </section>
+
+  <!-- ─── MENU ────────────────────────────────────────────────── -->
+  <section id="menu" class="bg-white border-y border-[var(--line)]">
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-center">Menu</h2>
+      <div class="mt-12 grid sm:grid-cols-2 gap-x-12 gap-y-10">
+        
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Pho</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pho Tai</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$12</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Rare beef in clear bone broth, served with bean sprouts, basil, lime, jalapeño.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pho Bo Vien</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$12</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Beef meatballs in clear broth, classic toppings.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pho Ga</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$12</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Chicken pho, lighter broth, fresh herbs.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pho Dac Biet (House Special)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Rare beef, brisket, tendon, meatball, tripe.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Vegetarian Pho</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$11</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Vegetable broth, tofu, mushroom, bok choy.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Rice Plates (Com Tam)</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Grilled Pork Chop</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Lemongrass-marinated pork chop over broken rice, pickled veg, fish sauce.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Grilled Chicken</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$13</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Lemongrass chicken, jasmine rice, fried egg.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Grilled Shrimp</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$15</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Garlic shrimp skewers over rice.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Banh Mi & Vermicelli</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Banh Mi Thit Nuong</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$9</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Grilled pork, pickled carrot, cucumber, cilantro, jalapeño on a crusty baguette.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Banh Mi Ga</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$9</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Lemongrass chicken banh mi.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Vermicelli Bowl (Bun Thit Nuong)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$13</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Grilled pork over rice noodles with herbs and nuoc cham.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Starters & Drinks</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Fresh Spring Rolls (2)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$6</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Shrimp and pork in rice paper with peanut dipping sauce.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Crispy Egg Rolls (3)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$6</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Pork and vegetable, sweet chili dipping sauce.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Vietnamese Iced Coffee (Cà Phê Sữa Đá)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$4</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Strong drip coffee over condensed milk, on ice.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Thai Iced Tea</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$4</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Sweet, creamy.</p>
+              </li></ul>
+            </div>
+      </div>
+      <p class="mt-12 text-sm text-[var(--muted)] text-center">Prices and availability may vary. Call ahead for daily specials.</p>
+    </div>
+  </section>
+
+  <!-- ─── VISIT (hours + location) ────────────────────────────── -->
+  <section id="visit" class="max-w-5xl mx-auto px-5 py-16">
+    <h2 class="text-3xl sm:text-4xl font-semibold text-center">Visit</h2>
+    <div class="mt-12 grid sm:grid-cols-2 gap-10">
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Hours</h3>
+        <ul class="space-y-2 text-[var(--muted)]">
+          <li class="flex justify-between"><span>Monday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Tuesday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Wednesday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Thursday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Friday</span><span class="text-[var(--ink)] font-medium">11am – 9:30pm</span></li>
+<li class="flex justify-between"><span>Saturday</span><span class="text-[var(--ink)] font-medium">11am – 9:30pm</span></li>
+<li class="flex justify-between"><span>Sunday</span><span class="text-[var(--ink)] font-medium">12pm – 8pm</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Location</h3>
+        <address class="not-italic text-[var(--muted)] leading-relaxed">
+          68 W Center Street<br />
+          Provo, UT 84601<br /><br />
+          <a class="brand-text font-semibold" href="https://maps.apple.com/?q=68%20W%20Center%20Street%2C%20Provo%2C%20UT%2084601">Open in Maps →</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────────────────────── -->
+  <section id="contact" class="bg-[var(--ink)] text-white">
+    <div class="max-w-3xl mx-auto px-5 py-16 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold">Get in touch</h2>
+      <p class="mt-4 text-white/70">Reservations, large parties, or catering questions — give us a call.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="tel:+18013778808" class="brand-bg px-6 py-3 rounded-full font-semibold shadow-md">
+          (801) 377-8808
+        </a>
+        <a href="mailto:hello@phoplusutah.com" class="bg-white text-[var(--ink)] px-6 py-3 rounded-full font-semibold shadow-md">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────────── -->
+  <footer class="max-w-5xl mx-auto px-5 py-10 text-center text-sm text-[var(--muted)]">
+    &copy; 2026 Pho Plus. All rights reserved.<br />
+    Site by <a href="https://whoffagents.com" class="brand-text hover:underline">Whoff Agents</a>.
+  </footer>
+
+</body>
+</html>
