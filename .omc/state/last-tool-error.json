@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd /tmp && curl -s -o atlas_first_call_stereo.wav \\\"https://storage.vapi.ai/019e3c68-94cb-7008-b6fd-f7a36244dcbf-1779130002243-b28711bf-8b09-4db9-869f-04e5179abeef-stereo.wav\\\" && ffmpeg -...",
-  "error": "Exit code 1\n  libswresample   6.  1.100 /  6.  1.100\nUnrecognized option 'map_channel'.\nError splitting the argument list: Option not found\n===\nls: atlas_callee_human.wav: No such file or directory\nls: atlas_caller_atlas.wav: No such file or directory",
-  "timestamp": "2026-05-18T22:37:49.598Z",
+  "tool_input_preview": "{\"command\":\"cd /Users/willweigeshoff/projects/whoff-restaurant-sales && mkdir -p demos/tb-yetter-plumbing && python3 template/contractor-render.py prospects/tb-yetter-plumbing.json demos/tb-yetter-plu...",
+  "error": "Exit code 1\nRendered TB Yetter Plumbing Experts → demos/tb-yetter-plumbing/index.html\nrendered, size:\n   16878 demos/tb-yetter-plumbing/index.html\n=== verify placeholders gone ===\n0",
+  "timestamp": "2026-05-18T23:01:29.269Z",
   "retry_count": 1
 }
