@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thai Simple Dish — Authentic Thai cooking, made fresh every day in Provo.</title>
+  <meta name="description" content="Thai Simple Dish in Provo, UT. Authentic Thai cooking, made fresh every day in Provo.. View menu, hours, and contact." />
+
+  <!-- OG / Social -->
+  <meta property="og:title" content="Thai Simple Dish" />
+  <meta property="og:description" content="Authentic Thai cooking, made fresh every day in Provo." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=1600&q=80" />
+  <meta property="og:type" content="restaurant" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #b70002;
+      --brand-dark: #8a0001;
+      --bg: #faf8f4;
+      --ink: #1f1d1a;
+      --muted: #6b6660;
+      --line: #e6e1d8;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .brand-bg  { background: var(--brand); }
+    .brand-bg:hover { background: var(--brand-dark); }
+    .brand-text { color: var(--brand); }
+    .hero-img {
+      background-image: linear-gradient(135deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15)), url('https://images.unsplash.com/photo-1559314809-0d155014e29e?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────── -->
+  <nav class="sticky top-0 z-30 bg-[var(--bg)]/95 backdrop-blur border-b border-[var(--line)]">
+    <div class="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#top" class="text-xl font-semibold tracking-tight">Thai Simple Dish</a>
+      <div class="hidden sm:flex gap-7 text-sm font-medium">
+        <a href="#menu" class="hover:brand-text">Menu</a>
+        <a href="#visit" class="hover:brand-text">Visit</a>
+        <a href="#contact" class="hover:brand-text">Contact</a>
+      </div>
+      <a href="tel:+18014727446" class="brand-bg text-white px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+        Call
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────────── -->
+  <header id="top" class="hero-img text-white">
+    <div class="max-w-5xl mx-auto px-5 py-28 sm:py-36">
+      <p class="uppercase tracking-[0.2em] text-xs sm:text-sm opacity-80">Provo, UT</p>
+      <h1 class="mt-3 text-5xl sm:text-7xl font-bold leading-tight">Thai Simple Dish</h1>
+      <p class="mt-4 text-xl sm:text-2xl opacity-90 max-w-2xl">Authentic Thai cooking, made fresh every day in Provo.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#menu" class="brand-bg px-6 py-3 rounded-full font-semibold shadow-md">View menu</a>
+        <a href="tel:+18014727446" class="bg-white text-[var(--ink)] px-6 py-3 rounded-full font-semibold shadow-md">Call us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── ABOUT ───────────────────────────────────────────────── -->
+  <section class="max-w-3xl mx-auto px-5 py-16 text-center">
+    <h2 class="text-3xl sm:text-4xl font-semibold">About</h2>
+    <p class="mt-6 text-lg leading-relaxed text-[var(--muted)]">Small, family-run Thai kitchen in downtown Provo. Every dish made to order, every curry paste mixed by hand. Stop by for lunch, dine in for dinner, or call ahead and we'll have it ready.</p>
+  </section>
+
+  <!-- ─── MENU ────────────────────────────────────────────────── -->
+  <section id="menu" class="bg-white border-y border-[var(--line)]">
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-center">Menu</h2>
+      <div class="mt-12 grid sm:grid-cols-2 gap-x-12 gap-y-10">
+        
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Curries</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Red Curry</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Bamboo shoots, bell peppers, Thai basil, coconut milk. Choice of chicken, beef, tofu.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Green Curry</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Eggplant, sweet basil, coconut milk, Thai green chilies. Choice of protein.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Massaman Curry</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$15</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Potato, onion, peanut, cinnamon — rich and mild. Choice of protein.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Panang Curry</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$15</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Kaffir lime leaf, bell pepper, ground peanut, coconut cream.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Noodles</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pad Thai</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$13</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Rice noodles, egg, bean sprouts, peanut, lime. Chicken, shrimp, or tofu.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pad See Ew</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$13</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Wide rice noodles, Chinese broccoli, egg, sweet soy.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Drunken Noodles</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Wide noodles, Thai basil, chili, garlic — spicy.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Rice & Stir Fry</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Thai Basil Stir Fry (Pad Krapow)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Ground chicken or pork, Thai chili, garlic, holy basil, served over jasmine rice with a fried egg.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Cashew Stir Fry</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$14</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Onion, bell pepper, carrot, roasted cashew, dried chili.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Pineapple Fried Rice</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$13</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Pineapple, cashew, raisin, curry powder, egg.</p>
+              </li></ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Soups & Starters</h3>
+              <ul class="space-y-4">
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Tom Yum</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$8</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Hot-and-sour broth, lemongrass, mushroom, lime, chili. With shrimp +$3.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Tom Kha</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$8</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Coconut soup, galangal, mushroom, kaffir lime leaf.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Crispy Spring Rolls (4)</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$6</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Vegetable-filled, served with sweet chili sauce.</p>
+              </li>
+              <li class="border-b border-[var(--line)] pb-3 last:border-0">
+                <div class="flex justify-between gap-4 items-baseline">
+                  <span class="font-semibold">Thai Iced Tea</span>
+                  <span class="brand-text font-semibold whitespace-nowrap">$4</span>
+                </div>
+                <p class="mt-1 text-sm text-[var(--muted)]">Sweet, creamy, the real thing.</p>
+              </li></ul>
+            </div>
+      </div>
+      <p class="mt-12 text-sm text-[var(--muted)] text-center">Prices and availability may vary. Call ahead for daily specials.</p>
+    </div>
+  </section>
+
+  <!-- ─── VISIT (hours + location) ────────────────────────────── -->
+  <section id="visit" class="max-w-5xl mx-auto px-5 py-16">
+    <h2 class="text-3xl sm:text-4xl font-semibold text-center">Visit</h2>
+    <div class="mt-12 grid sm:grid-cols-2 gap-10">
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Hours</h3>
+        <ul class="space-y-2 text-[var(--muted)]">
+          <li class="flex justify-between"><span>Monday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Tuesday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Wednesday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Thursday</span><span class="text-[var(--ink)] font-medium">11am – 9pm</span></li>
+<li class="flex justify-between"><span>Friday</span><span class="text-[var(--ink)] font-medium">11am – 10pm</span></li>
+<li class="flex justify-between"><span>Saturday</span><span class="text-[var(--ink)] font-medium">11am – 10pm</span></li>
+<li class="flex justify-between"><span>Sunday</span><span class="text-[var(--ink)] font-medium">Closed</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Location</h3>
+        <address class="not-italic text-[var(--muted)] leading-relaxed">
+          287 E 300 S<br />
+          Provo, UT 84606<br /><br />
+          <a class="brand-text font-semibold" href="https://maps.apple.com/?q=287%20E%20300%20S%2C%20Provo%2C%20UT%2084606">Open in Maps →</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────────────────────── -->
+  <section id="contact" class="bg-[var(--ink)] text-white">
+    <div class="max-w-3xl mx-auto px-5 py-16 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold">Get in touch</h2>
+      <p class="mt-4 text-white/70">Reservations, large parties, or catering questions — give us a call.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="tel:+18014727446" class="brand-bg px-6 py-3 rounded-full font-semibold shadow-md">
+          (801) 472-7446
+        </a>
+        <a href="mailto:hello@thaisimpledish.com" class="bg-white text-[var(--ink)] px-6 py-3 rounded-full font-semibold shadow-md">Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────────── -->
+  <footer class="max-w-5xl mx-auto px-5 py-10 text-center text-sm text-[var(--muted)]">
+    &copy; 2026 Thai Simple Dish. All rights reserved.<br />
+    Site by <a href="https://whoffagents.com" class="brand-text hover:underline">Whoff Agents</a>.
+  </footer>
+
+</body>
+</html>
