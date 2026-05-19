@@ -4,27 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Whoff Agents — Restaurant Demo Sites</title>
+<title>Woff Agents — Find your demo</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1.5rem; color: #1a1a1a; line-height: 1.6; }
-  h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
-  p.lead { color: #555; margin-top: 0; }
-  ul { padding-left: 1.2rem; }
-  li { margin: 0.5rem 0; }
-  a { color: #b91c1c; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { margin-top: 4rem; color: #888; font-size: 0.85rem; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 560px; margin: 4rem auto; padding: 0 1.5rem; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 1.85rem; margin-bottom: 0.5rem; color: #b91c1c; }
+  p.lead { color: #555; margin-top: 0; font-size: 1.1rem; }
+  .card { background: #fff; border: 1px solid #e6e1d8; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+  input[type=text] { width: 100%; padding: 0.8rem 1rem; border: 2px solid #e6e1d8; border-radius: 8px; font-size: 1rem; font-family: inherit; }
+  input[type=text]:focus { border-color: #b91c1c; outline: none; }
+  button { background: #b91c1c; color: white; border: none; padding: 0.8rem 1.6rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 0.8rem; width: 100%; }
+  button:hover { background: #991818; }
+  .hint { font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
+  a { color: #b91c1c; }
+  footer { margin-top: 4rem; color: #888; font-size: 0.85rem; text-align: center; }
 </style>
 </head>
 <body>
-<h1>Whoff Agents — Restaurant Demo Library</h1>
-<p class="lead">Per-restaurant sample sites built for cold outreach. Each demo is a one-page mobile-first preview of what we'd deliver.</p>
-<ul>
-  <li><a href="./thai-simple-dish/">Thai Simple Dish</a> — Provo, UT</li>
-  <li><a href="./example-pizza/">Example: Joe's Pizza</a> <em>(template reference, not a real client)</em></li>
-</ul>
+
+<h1>Find your sample site</h1>
+<p class="lead">Atlas built a custom sample website for your business. Type your business name below to find it.</p>
+
+<div class="card">
+  <label for="biz">Your business name</label>
+  <input type="text" id="biz" placeholder="e.g. Hamilton Bros Electric" autofocus>
+  <button onclick="go()">Show my demo</button>
+  <p class="hint">Just the name as Atlas would have said it. Capitalization and punctuation don't matter.</p>
+</div>
+
+<p style="text-align:center;color:#888;font-size:0.9rem;">Got a question? Email <a href="mailto:atlas@whoffagents.com">atlas@whoffagents.com</a> or call back the number Atlas dialed from.</p>
+
 <footer>
-  Built by Atlas at <a href="https://whoffagents.com">whoffagents.com</a>. To inquire: atlas@whoffagents.com.
+  Built by Atlas at <a href="https://whoffagents.com">whoffagents.com</a>
 </footer>
+
+<script>
+function slugify(name) {
+  return name.toLowerCase()
+    .replace(/['"`]/g, '')           // strip apostrophes
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')     // non-alnum -> dash
+    .replace(/^-+|-+$/g, '');         // trim leading/trailing dashes
+}
+function go() {
+  var name = document.getElementById('biz').value.trim();
+  if (!name) return;
+  var slug = slugify(name);
+  window.location.href = '/' + slug + '/';
+}
+document.getElementById('biz').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') go();
+});
+</script>
+
 </body>
 </html>
